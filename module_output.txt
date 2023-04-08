@@ -1,0 +1,2 @@
+hostname:amp095
+module_check_status:1110

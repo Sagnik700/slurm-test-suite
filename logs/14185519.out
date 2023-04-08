@@ -1,0 +1,24 @@
+================================================================================
+JobID = 14185519
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR JAVA:
+/var/spool/slurm/d/job14185519/slurm_script: line 6: HOSTNAME: command not found
+1. Java version:
+java version "1.7.0_261"
+OpenJDK Runtime Environment (rhel-2.6.22.2.el7_8-x86_64 u261-b02)
+OpenJDK 64-Bit Server VM (build 24.261-b02, mixed mode)
+2. Basic java class:
+/var/spool/slurm/d/job14185519/slurm_script: line 15: javac: command not found
+Error: Could not find or load main class MyClass
+============ Job Information ===================================================
+Submitted: 2022-12-15T12:08:16
+Started: 2022-12-15T12:08:17
+Ended: 2022-12-15T12:08:18
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14185519
+================================================================================

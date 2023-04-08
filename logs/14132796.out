@@ -1,0 +1,70 @@
+================================================================================
+JobID = 14132796
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR PYTHON:
+1. Python version:
+Python 3.9.13
+2. Basic inline python command:
+Sum of 3 & 4 is:  7.0
+3. Basic python script:
+0.8414709848078965
+0.5403023058681397
+{'temperatures': [4, 3, 7, 9, 11, 14, 16, 17, 12, 11, 9, 9], 'months': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']}
+    temperatures months
+0              4    Jan
+1              3    Feb
+2              7    Mar
+3              9    Apr
+4             11    May
+5             14    Jun
+6             16    Jul
+7             17    Aug
+8             12    Sep
+9             11    Oct
+10             9    Nov
+11             9    Dec
+4. Load Anaconda3:
+
+Currently Loaded Modules:
+  1) anaconda3/2021.05
+
+ 
+
+WARNING: A conda environment already exists at '/usr/users/sgupta5/.conda/envs/test-suite-env-1'
+Remove existing environment (y/[n])? 
+
+CondaSystemExit: Exiting.
+
+Requirement already satisfied: numpy in /home/uni11/gwdg1/GWDG/sgupta5/.local/lib/python3.8/site-packages (1.23.2)
+Requirement already satisfied: pandas in /home/uni11/gwdg1/GWDG/sgupta5/.local/lib/python3.8/site-packages (1.4.3)
+Requirement already satisfied: pytz>=2020.1 in /home/uni11/gwdg1/GWDG/sgupta5/.local/lib/python3.8/site-packages (from pandas) (2022.2.1)
+Requirement already satisfied: python-dateutil>=2.8.1 in /home/uni11/gwdg1/GWDG/sgupta5/.local/lib/python3.8/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in /home/uni11/gwdg1/GWDG/sgupta5/.local/lib/python3.8/site-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
+0.8414709848078965
+0.5403023058681397
+{'temperatures': [4, 3, 7, 9, 11, 14, 16, 17, 12, 11, 9, 9], 'months': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']}
+    temperatures months
+0              4    Jan
+1              3    Feb
+2              7    Mar
+3              9    Apr
+4             11    May
+5             14    Jun
+6             16    Jul
+7             17    Aug
+8             12    Sep
+9             11    Oct
+10             9    Nov
+11             9    Dec
+============ Job Information ===================================================
+Submitted: 2022-12-08T11:11:28
+Started: 2022-12-08T11:11:29
+Ended: 2022-12-08T11:11:59
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14132796
+================================================================================

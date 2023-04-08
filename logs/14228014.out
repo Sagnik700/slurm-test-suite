@@ -1,0 +1,93 @@
+================================================================================
+JobID = 14228014
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR GCC:
+1. Load openmpi and gcc:
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openblas/0.3.18     2) openmpi/4.1.1
+
+
+Currently Loaded Modules:
+  1) openjdk/11.0.12_7   4) octave/6.3.0-suitesparse   7) openmpi/4.1.1
+  2) hdf5/1.10.7         5) gcc/10.2.0
+  3) fftw/3.3.10         6) openblas/0.3.18
+
+ 
+
+2. Run a basic OpenMPI program
+[amp095:208827:0:208827] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x70)
+==== backtrace (tid: 208827) ====
+ 0 0x000000000007c438 opal_mca_common_ofi_select_provider()  ???:0
+ 1 0x000000000008e645 mca_btl_ofi_component_init()  btl_ofi_component.c:0
+ 2 0x000000000007ece9 mca_btl_base_select()  ???:0
+ 3 0x00000000000d4fa4 mca_bml_r2_component_init()  ???:0
+ 4 0x00000000000d2e71 mca_bml_base_init()  ???:0
+ 5 0x000000000026c63c ompi_mpi_init()  ???:0
+ 6 0x00000000000ada59 MPI_Init()  ???:0
+ 7 0x0000000000400a79 main()  ???:0
+ 8 0x0000000000022555 __libc_start_main()  ???:0
+ 9 0x00000000004009a9 _start()  ???:0
+=================================
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 208827 on node amp095 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+3. Run a OpenMPI program with multi-process-communication
+[amp095:208845:0:208845] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x230)
+==== backtrace (tid: 208845) ====
+ 0 0x000000000007c438 opal_mca_common_ofi_select_provider()  ???:0
+ 1 0x000000000008e645 mca_btl_ofi_component_init()  btl_ofi_component.c:0
+ 2 0x000000000007ece9 mca_btl_base_select()  ???:0
+ 3 0x00000000000d4fa4 mca_bml_r2_component_init()  ???:0
+ 4 0x00000000000d2e71 mca_bml_base_init()  ???:0
+ 5 0x000000000026c63c ompi_mpi_init()  ???:0
+ 6 0x00000000000ada59 MPI_Init()  ???:0
+ 7 0x0000000000400af0 main()  ???:0
+ 8 0x0000000000022555 __libc_start_main()  ???:0
+ 9 0x0000000000400a29 _start()  ???:0
+=================================
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 208845 on node amp095 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+3. Run a OpenMPI program with multi-process-communication
+[amp095:208868:0:208868] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x8)
+==== backtrace (tid: 208868) ====
+ 0 0x000000000008e6e0 mca_btl_ofi_component_init()  btl_ofi_component.c:0
+ 1 0x000000000007ece9 mca_btl_base_select()  ???:0
+ 2 0x00000000000d4fa4 mca_bml_r2_component_init()  ???:0
+ 3 0x00000000000d2e71 mca_bml_base_init()  ???:0
+ 4 0x000000000026c63c ompi_mpi_init()  ???:0
+ 5 0x00000000000ada2e MPI_Init()  ???:0
+ 6 0x0000000000400ad4 main()  ???:0
+ 7 0x0000000000022555 __libc_start_main()  ???:0
+ 8 0x0000000000400a09 _start()  ???:0
+=================================
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 208868 on node amp095 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+10
+110
+============ Job Information ===================================================
+Submitted: 2022-12-21T23:39:42
+Started: 2022-12-21T23:39:43
+Ended: 2022-12-21T23:39:48
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14228014
+================================================================================

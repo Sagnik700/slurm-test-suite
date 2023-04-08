@@ -1,0 +1,34 @@
+================================================================================
+JobID = 14188252
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR GIT:
+1. Load git:
+
+Currently Loaded Modules:
+  1) anaconda3/2021.05   2) git/2.31.1
+
+ 
+
+2. Create a git repository
+git: 'inrerit' is not a git command. See 'git --help'.
+fatal: not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+git: 'adfd' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+fatal: not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+11110
+============ Job Information ===================================================
+Submitted: 2022-12-15T19:36:46
+Started: 2022-12-15T19:36:47
+Ended: 2022-12-15T19:36:48
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14188252
+================================================================================

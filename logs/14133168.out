@@ -1,0 +1,30 @@
+================================================================================
+JobID = 14133168
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR OCTAVE:
+1. Load octave:
+
+Currently Loaded Modules:
+  1) anaconda3/2021.05   4) openmpi/4.1.1   7) openblas/0.3.18
+  2) openjdk/11.0.12_7   5) hdf5/1.10.7     8) octave/6.3.0-suitesparse
+  3) spark/3.1.1         6) fftw/3.3.10
+
+ 
+
+2. Run a Octave script
+warning: docstring file '/usr/share/octave/3.8.2/etc/built-in-docstrings' not found
+error: 'str2int' undefined near line 4 column 7
+error: called from:
+error:   /home/uni11/gwdg1/GWDG/sgupta5/slurm_test_suite/all_tests/octave/basicOctaveScript.m at line 4, column 5
+============ Job Information ===================================================
+Submitted: 2022-12-08T12:49:55
+Started: 2022-12-08T12:49:55
+Ended: 2022-12-08T12:49:58
+Elapsed: 1 min, Limit:  min, Difference: -1 min
+CPUs: 0, Nodes: 0
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14133168
+================================================================================

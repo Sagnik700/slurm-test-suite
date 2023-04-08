@@ -1,0 +1,3 @@
+https://bigd.big.ac.cn/ncov#about
+https://www.ncbi.nlm.nih.gov/nuccore/MN938384
+https://towardsdatascience.com/how-to-perform-sequence-alignment-on-2019-ncov-with-mafft-96c1944da8c6

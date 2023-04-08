@@ -1,0 +1,29 @@
+================================================================================
+JobID = 14133847
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR SINGULARITY:
+1. Load singularity:
+
+Currently Loaded Modules:
+  1) anaconda3/2021.05   5) hdf5/1.10.7                9) git/2.31.1
+  2) openjdk/11.0.12_7   6) fftw/3.3.10               10) go/1.17.2
+  3) spark/3.1.1         7) openblas/0.3.18           11) singularity/3.8.5
+  4) openmpi/4.1.1       8) octave/6.3.0-suitesparse
+
+ 
+
+2. Run a basic command to pull a .sif image with singularity
+INFO:    Use cached image
+3. Delete the downloaded image
+============ Job Information ===================================================
+Submitted: 2022-12-08T13:24:34
+Started: 2022-12-08T13:24:35
+Ended: 2022-12-08T13:24:46
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14133847
+================================================================================

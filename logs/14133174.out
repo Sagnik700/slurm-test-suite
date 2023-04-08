@@ -1,0 +1,28 @@
+================================================================================
+JobID = 14133174
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR OCTAVE:
+1. Load octave:
+
+Currently Loaded Modules:
+  1) anaconda3/2021.05   4) openmpi/4.1.1   7) openblas/0.3.18
+  2) openjdk/11.0.12_7   5) hdf5/1.10.7     8) octave/6.3.0-suitesparse
+  3) spark/3.1.1         6) fftw/3.3.10
+
+ 
+
+2. Run a Octave script
+./all_tests/octave/basicOctaveScript.m: line 1: syntax error near unexpected token `‘Hello'
+./all_tests/octave/basicOctaveScript.m: line 1: `disp(‘Hello World’);'
+============ Job Information ===================================================
+Submitted: 2022-12-08T12:55:04
+Started: 2022-12-08T12:55:05
+Ended: 2022-12-08T12:55:07
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14133174
+================================================================================

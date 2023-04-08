@@ -1,0 +1,29 @@
+================================================================================
+JobID = 14135455
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR VALGRIND:
+1. Load valgrind:
+
+Currently Loaded Modules:
+  1) anaconda3/2021.05   6) octave/6.3.0-suitesparse  11) gcc/10.2.0
+  2) openjdk/11.0.12_7   7) git/2.31.1                12) openblas/0.3.18
+  3) spark/3.1.1         8) go/1.17.2                 13) python/3.9.0
+  4) hdf5/1.10.7         9) singularity/3.8.5         14) openmpi/4.1.1
+  5) fftw/3.3.10        10) valgrind/3.17.0           15) boost/1.77.0
+
+ 
+
+2. Run a basic C programming file with memory leak issues to test Valgrind's output
+3. Checking whether the valgrind output file is empty or not
+============ Job Information ===================================================
+Submitted: 2022-12-08T13:47:35
+Started: 2022-12-08T13:47:35
+Ended: 2022-12-08T13:47:40
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14135455
+================================================================================

@@ -1,0 +1,25 @@
+================================================================================
+JobID = 14185648
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR GCC:
+1. Load gcc:
+
+Currently Loaded Modules:
+  1) anaconda3/2021.05   2) git/2.31.1   3) gcc/10.2.0
+
+ 
+
+2. Run a C program
+Quotient = 3
+Remainder = 1============ Job Information ===================================================
+Submitted: 2022-12-15T13:50:48
+Started: 2022-12-15T13:50:48
+Ended: 2022-12-15T13:50:52
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14185648
+================================================================================

@@ -1,0 +1,51 @@
+================================================================================
+JobID = 14188043
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR GIT:
+1. Load git:
+
+Currently Loaded Modules:
+  1) anaconda3/2021.05   2) git/2.31.1
+
+ 
+
+2. Create a git repository
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/uni11/gwdg1/GWDG/sgupta5/slurm_test_suite/all_tests/git/test_repo/.git/
+Switched to a new branch 'new-branch'
+git: 'adfd' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+On branch new-branch
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.nfs00000000344b42f200006d35
+	module_output.txt
+	readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+============ Job Information ===================================================
+Submitted: 2022-12-15T19:30:26
+Started: 2022-12-15T19:30:27
+Ended: 2022-12-15T19:30:30
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14188043
+================================================================================

@@ -1,0 +1,55 @@
+================================================================================
+JobID = 14188255
+User = sgupta5, Account = all
+Partition = int, Nodelist = amp095
+================================================================================
+:BASIC TEST FOR LOADED MODULE CHECK FOR GIT:
+1. Load git:
+
+Currently Loaded Modules:
+  1) anaconda3/2021.05   2) git/2.31.1
+
+ 
+
+2. Create a git repository
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/uni11/gwdg1/GWDG/sgupta5/slurm_test_suite/all_tests/git/test_repo/.git/
+Switched to a new branch 'new-branch'
+[new-branch (root-commit) 65b3b7c] added
+ Committer: Sagnik Gupta <sgupta5@amp095.global.gwdg.cluster>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 2 insertions(+)
+ create mode 100644 .nfs00000000344b42f200006d35
+ create mode 100644 module_output.txt
+ create mode 100644 readme.txt
+0
+============ Job Information ===================================================
+Submitted: 2022-12-15T19:38:45
+Started: 2022-12-15T19:38:45
+Ended: 2022-12-15T19:38:50
+Elapsed: 1 min, Limit: 60 min, Difference: 59 min
+CPUs: 1, Nodes: 1
+============= ProfiT-HPC =======================================================
+To generate the ProfiT-HPC text report, run the following command
+profit-hpc 14188255
+================================================================================
